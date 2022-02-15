@@ -27,7 +27,8 @@ data class Pilot(var name: String, var life: Int, var cube: Int=0) {
 
     fun recharge() {
         //TODO: add microtransction
-        energy = 7
+        energy = 27
+        life = 20
 
     }
 
