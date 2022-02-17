@@ -45,6 +45,16 @@ class PilotActivity : AppCompatActivity() {
        // refreshUI()
 
         binding.btnStart.setOnClickListener{
+            if(viewModel.fly(binding.sldRevolution.value.toInt(), binding.swtTraining.isChecked)){
+                Snackbar.make(binding.root, getString(R.string.low_ressources), Snackbar.LENGTH_INDEFINITE)
+                    .setAction(getString(R.string.msgContinue)) {
+                        viewModel.recharge()
+                   }
+                   .show()
+            }
+        }
+    }
+}
 //            if(_pilot.canFly()) {
 //                binding.btnStart.isEnabled = false
 //                _pilot.fly(binding.sldRevolution.value.toInt(), binding.swtTraining.isChecked)
@@ -85,10 +95,7 @@ class PilotActivity : AppCompatActivity() {
 //                    }
 //                    .show()
 //            }
-        }
 
-
-    }
 
 //    private fun refreshUI() {
 //        binding.txvPilotName.text = _pilot.name
@@ -98,4 +105,3 @@ class PilotActivity : AppCompatActivity() {
 //        binding.txvEnergy.text = _pilot.energy.toString()
 //        binding.txvCube.text = _pilot.cube.toString()
 //    }
-}
