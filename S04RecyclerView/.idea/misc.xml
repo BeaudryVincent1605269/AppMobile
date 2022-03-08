@@ -3,8 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/1605269/Mobile/S04RecyclerView/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
         <entry key="..\:/1605269/Mobile/S04RecyclerView/app/src/main/res/layout/item_planet.xml" value="0.36666666666666664" />
+=======
+        <entry key="..\:/1605269/AppMobile/AppMobile/S04RecyclerView/app/src/main/res/layout/activity_main.xml" value="0.36102564102564105" />
+        <entry key="..\:/1605269/AppMobile/AppMobile/S04RecyclerView/app/src/main/res/layout/item_planet.xml" value="0.36666666666666664" />
+        <entry key="..\:/Yannick/4C6/4C6.H22.101/S04RecyclerView/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Yannick/4C6/4C6.H22.101/S04RecyclerView/app/src/main/res/layout/item_planet.xml" value="0.36666666666666664" />
+>>>>>>> origin/master
       </map>
     </option>
   </component>

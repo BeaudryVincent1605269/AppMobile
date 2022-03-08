@@ -12,5 +12,9 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+<<<<<<< HEAD
 rootProject.name = "S04RecyclerView"
+=======
+rootProject.name = "S04 RecyclerView"
+>>>>>>> origin/master
 include ':app'

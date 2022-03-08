@@ -6,10 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="15dp"
-    >
-
+    app:cardCornerRadius="20dp"
+    app:cardElevation="150dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -25,29 +23,30 @@
             android:src="@drawable/planet3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></ImageView>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/txvPlanetName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/purple_200"
-            android:textSize="18dp"
-            android:text="TextView"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold|italic"
+            android:textColor="@color/purple_500"
+            android:textSize="22sp"
+            tools:text="Le nom de la planète"
             app:layout_constraintStart_toEndOf="@+id/imvPlanet"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/imvPlanet" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/txvPlanetTemperature"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
             android:layout_marginTop="8dp"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp"
+            tools:text="47,89"
             app:layout_constraintStart_toStartOf="@+id/txvPlanetName"
             app:layout_constraintTop_toBottomOf="@+id/txvPlanetName" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
