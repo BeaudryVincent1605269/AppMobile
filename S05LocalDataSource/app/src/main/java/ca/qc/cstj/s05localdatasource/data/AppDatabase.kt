@@ -26,7 +26,7 @@ abstract class AppDatabase : RoomDatabase() {
 
         fun getDatabase(context: Context) :
                 AppDatabase = Instance ?: synchronized(this) {
-                val instance = Room.databaseBuilder(
+            val instance = Room.databaseBuilder(
                 context,
                 AppDatabase::class.java,
                 "contacts_database" //TODO: RENAME database_name
